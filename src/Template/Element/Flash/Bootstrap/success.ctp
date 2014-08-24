@@ -1,0 +1,19 @@
+<div class="row">
+	<div class="col-xs-12">
+		<div class="alert alert-success alert-dismissable">
+			<?php
+				echo $this->Form->button('&times;', [
+					'data-dismiss' => 'alert',
+					'aria-hidden' => true,
+					'class' => 'close',
+					'escape' => false
+				]);
+			?>
+			<strong>
+				<?php $this->FontAwesome->icon('check-circle'); ?>
+				<?= __('Success') . ': '; ?>
+			</strong>
+			<?= h($message); ?>
+		</div>
+	</div>
+</div>
